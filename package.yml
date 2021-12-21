@@ -1,0 +1,16 @@
+# package.yml
+package:
+  name: 'yf-package-example' # No capitalization
+  description: 'An example package for yflat'
+  version: 0.1.0
+  url: 'https://github.com/JakeRoggenbuck/yf-package-example'
+
+  # Optional
+  authors:
+    - 'Jake Roggenbuck'
+
+  # Optional
+  license: 'MIT'
+
+# Dependencies for this package
+depends:
