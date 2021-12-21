@@ -6,12 +6,12 @@ public {
 BLACK: int 		= 30;
 RED: int 		= 31;
 GREEN: int 		= 32;
-YELLOW: int 		= 33;
-BLUE: int 		= 34;
-MAGENTA: int 		= 35;
-CYAN: int 		= 36;
-WHITE: int 		= 37;
-RESET: int 		= 39;
+YELLOW: int		= 33;
+BLUE: int		= 34;
+MAGENTA: int		= 35;
+CYAN: int		= 36;
+WHITE: int		= 37;
+RESET: int		= 39;
 
 LIGHTBLACK: int   	= 90;
 LIGHTRED: int    	= 91;
@@ -19,7 +19,7 @@ LIGHTGREEN: int   	= 92;
 LIGHTYELLOW: int  	= 93;
 LIGHTBLUE: int    	= 94;
 LIGHTMAGENTA: int 	= 95;
-LIGHTCYAN: int 		= 96;
+LIGHTCYAN: int		= 96;
 LIGHTWHITE: int   	= 97;
 
 }
