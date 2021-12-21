@@ -1,16 +1,12 @@
-# package.yml
 package:
-  name: 'yf-package-example' # No capitalization
-  description: 'An example package for yflat'
+  name: 'termcolor-yf'
+  description: 'Terminal coloring + style for Y-flat'
   version: 0.1.0
-  url: 'https://github.com/JakeRoggenbuck/yf-package-example'
+  url: 'https://github.com/JakeRoggenbuck/termcolor-yf'
 
-  # Optional
   authors:
     - 'Jake Roggenbuck'
 
-  # Optional
   license: 'MIT'
 
-# Dependencies for this package
 depends:

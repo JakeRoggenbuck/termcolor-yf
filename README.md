@@ -1,6 +1,6 @@
-# yf-package-example
+# termcolor-yf
 
 ## Install
 ```
-yfin install jakeroggenbuck/yf-package-example
+yfin install jakeroggenbuck/termcolor-yf
 ```
