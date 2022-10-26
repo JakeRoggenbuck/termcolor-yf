@@ -1,57 +1,68 @@
-use std.io;
-use std.data.map;
-
 public {
 
-BLACK: int 		= 30;
-RED: int 		= 31;
-GREEN: int 		= 32;
-YELLOW: int		= 33;
-BLUE: int		= 34;
-MAGENTA: int		= 35;
-CYAN: int		= 36;
-WHITE: int		= 37;
-RESET: int		= 39;
+BLACK: str 		= "30";
+RED: str 		= "31";
+GREEN: str 		= "32";
+YELLOW: str		= "33";
+BLUE: str		= "34";
+MAGENTA: str	= "35";
+CYAN: str		= "36";
+WHITE: str		= "37";
+RESET: str		= "39";
 
-LIGHTBLACK: int   	= 90;
-LIGHTRED: int    	= 91;
-LIGHTGREEN: int   	= 92;
-LIGHTYELLOW: int  	= 93;
-LIGHTBLUE: int    	= 94;
-LIGHTMAGENTA: int 	= 95;
-LIGHTCYAN: int		= 96;
-LIGHTWHITE: int   	= 97;
+LIGHTBLACK: str   	= "90";
+LIGHTRED: str    	= "91";
+LIGHTGREEN: str   	= "92";
+LIGHTYELLOW: str  	= "93";
+LIGHTBLUE: str    	= "94";
+LIGHTMAGENTA: str 	= "95";
+LIGHTCYAN: str		= "96";
+LIGHTWHITE: str   	= "97";
 
 }
 
-MAP: map.Map<string, int>;
-
-MAP.set("black": 	BLACK);
-MAP.set("red": 		RED);
-MAP.set("green": 	GREEN);
-MAP.set("yellow": 	YELLOW);
-MAP.set("blue": 	BLUE);
-MAP.set("magenta": 	MAGENTA);
-MAP.set("cyan": 	CYAN);
-MAP.set("white": 	WHITE);
-MAP.set("reset": 	RESET);
-MAP.set("lightblack": 	LIGHTBLACK);
-MAP.set("lightred": 	LIGHTRED);
-MAP.set("lightgreen": 	LIGHTGREEN);
-MAP.set("lightyellow": 	LIGHTYELLOW);
-MAP.set("lightblue": 	LIGHTBLUE);
-MAP.set("lightmagent": 	LIGHTMAGENT);
-MAP.set("lightcyan": 	LIGHTCYAN);
-MAP.set("lightwhite": 	LIGHTWHITE);
-
-get_color_number(name: str): int {
-	return MAP.get(name);
+get_color_code(name: str): str {
+	if (name == "black") {
+		return BLACK;
+	} else if (name == "red") {
+		return RED;
+	} else if (name == "green") {
+		return GREEN;
+	} else if (name == "yellow") {
+		return YELLOW;
+	} else if (name == "blue") {
+		return BLUE;
+	} else if (name == "magenta") {
+		return MAGENTA;
+	} else if (name == "cyan") {
+		return CYAN;
+	} else if (name == "white") {
+		return WHITE;
+	} else if (name == "reset") {
+		return RESET;
+	} else if (name == "lightblack") {
+		return LIGHTBLACK;
+	} else if (name == "lightred") {
+		return LIGHTRED;
+	} else if (name == "lightgreen") {
+		return LIGHTGREEN;
+	} else if (name == "lightyellow") {
+		return LIGHTYELLOW;
+	} else if (name == "lightblue") {
+		return LIGHTBLUE;
+	} else if (name == "lightmagent") {
+		return LIGHTMAGENTA;
+	} else if (name == "lightcyan") {
+		return LIGHTCYAN;
+	} else if (name == "lightwhite") {
+		return LIGHTWHITE;
+	}
 }
 
 public {
 
-colored(text: str, color: str) {
-	return "\x1b[1;" + MAP.get(color) + "m" + text + "\x1b[0m";
+colored(text: str, color: str): str {
+	return "\x1b[1;" + get_color_code(color) + "m" + text + "\x1b[0m";
 }
 
 }
