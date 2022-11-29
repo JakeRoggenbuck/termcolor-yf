@@ -1,5 +1,5 @@
 # termcolor-yf
-Terminal color library for the [y-flat](github.com/y-flat/) language
+Terminal color library for the [y-flat](https://github.com/y-flat/) language
 
 ## Install
 ```
